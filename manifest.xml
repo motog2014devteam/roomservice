@@ -12,6 +12,16 @@
   <project name="motog2014devteam/android_kernel_motorola_titan-OLD" path="kernel/motorola/titan" remote="github" revision="cm-11.0" />
   <project name="motog2014devteam/proprietary_vendor_motorola" path="vendor/motorola" remote="github" revision="cm-11.0" />
 
+  <!-- Build Scripts -->
+  <project name="motog2014devteam/buildscripts" path="buildscripts" remote="github" revision="cm-12.0" >
+    <copyfile src="build.sh" dest="build.sh" />
+    <copyfile src="resync.sh" dest="resync.sh" />
+    <copyfile src="patches/4.8_build.patch" dest="patches/4.8_build.patch" />
+    <copyfile src="patches/chromium_build.patch" dest="patches/chromium_build.patch" />
+    <copyfile src="patches/chromium_frameworks_webview.patch" dest="patches/chromium_frameworks_webview.patch" />
+    <copyfile src="patches/chromium_vendor_cm.patch" dest="patches/chromium_vendor_cm.patch" />
+  </project>
+
   <!-- SaberMod -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="Team-Validus/arm-eabi-4.8" remote="github" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="Team-Validus/arm-linux-androideabi-4.8" remote="github" revision="master" />
