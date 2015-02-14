@@ -10,6 +10,15 @@
   <project name="motog2014devteam/android_device_motorola_titan" path="device/motorola/titan" remote="github" revision="cm-12.0" />
   <project name="motog2014devteam/android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" remote="github" revision="cm-12.0" />
  
+  <!-- Build Scripts -->
+  <project name="motog2014devteam/buildscripts" path="buildscripts" remote="github" revision="cm-12.0" >
+    <copyfile src="build.sh" dest="build.sh" />
+    <copyfile src="resync.sh" dest="resync.sh" />
+    <copyfile src="patches/chromium_build.patch" dest="patches/chromium_build.patch" />
+    <copyfile src="patches/chromium_vendor_cm.patch" dest="patches/chromium_vendor_cm.patch" />
+    <copyfile src="patches/chromium_frameworks_webview.patch" dest="patches/chromium_frameworks_webview.patch" />
+  </project>
+ 
   <!-- SaberMod -->
   <remove-project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <remove-project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
