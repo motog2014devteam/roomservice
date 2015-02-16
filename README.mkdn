@@ -1,0 +1,36 @@
+CyanogenMod 12
+================
+
+Local Manifest to build CyanogenMod ROM for the Motorola Moto G 2014
+
+Build Instructions for CyanogenMod 12 Moto G 2014 (titan)
+-----------------------------------------------------------------------------
+
+1. Initialize repo using the following commands
+
+```bash
+mkdir ~/bin
+PATH=~/bin:$PATH
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+mkdir aospa
+cd aospa
+repo init -u git://github.com/CyanogenMod/android.git -b cm-12.0
+```
+
+2. Add our local manifest
+
+```bash
+curl --create-dirs -L -o .repo/local_manifests/titan.xml -O -L https://raw.github.com/motog2014devteam/roomservice/cm-12.0/manifest.xml.xml
+```
+
+3. Download sources
+```bash
+repo sync -f -j5
+```
+
+4. Build CyanogenMod 12 for Moto G 2014
+
+```bash
+./build.sh -c1 titan
+```
