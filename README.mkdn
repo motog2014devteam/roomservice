@@ -1,8 +1,6 @@
 CyanogenMod 12
 ================
 
-Local Manifest to build CyanogenMod ROM for the Motorola Moto G 2014
-
 Build Instructions for CyanogenMod 12 Moto G 2014 (titan)
 
 1. Initialize repo using the following commands
