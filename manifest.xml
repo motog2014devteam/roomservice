@@ -17,6 +17,7 @@
     <copyfile src="build.sh" dest="build.sh" />
     <copyfile src="resync.sh" dest="resync.sh" />
     <copyfile src="patches/archi_build.patch" dest="patches/archi_build.patch" />
+    <copyfile src="patches/4.8_art.patch" dest="patches/4.8_art.patch" />
     <copyfile src="patches/chromium_build.patch" dest="patches/chromium_build.patch" />
     <copyfile src="patches/chromium_frameworks_webview.patch" dest="patches/chromium_frameworks_webview.patch" />
     <copyfile src="patches/chromium_vendor_cm.patch" dest="patches/chromium_vendor_cm.patch" />
