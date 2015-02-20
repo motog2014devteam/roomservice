@@ -16,7 +16,7 @@
   <project name="motog2014devteam/buildscripts" path="buildscripts" remote="github" revision="cm-11.0" >
     <copyfile src="build.sh" dest="build.sh" />
     <copyfile src="resync.sh" dest="resync.sh" />
-    <copyfile src="patches/4.8_build.patch" dest="patches/4.8_build.patch" />
+    <copyfile src="patches/archi_build.patch" dest="patches/archi_build.patch" />
     <copyfile src="patches/chromium_build.patch" dest="patches/chromium_build.patch" />
     <copyfile src="patches/chromium_frameworks_webview.patch" dest="patches/chromium_frameworks_webview.patch" />
     <copyfile src="patches/chromium_vendor_cm.patch" dest="patches/chromium_vendor_cm.patch" />
