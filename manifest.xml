@@ -23,8 +23,8 @@
     <copyfile src="patches/chromium_vendor_cm.patch" dest="patches/chromium_vendor_cm.patch" />
   </project>
 
-  <!-- SaberMod -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="SaberMod/arm-eabi-4.8" remote="github" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="SaberMod/arm-androideabi-4.8" remote="github" revision="master" />
+  <!-- Linaro 4.8 -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.8-arm-eabi" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.8-arm-linux-androideabi" />
 </manifest>
 
